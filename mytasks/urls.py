@@ -20,7 +20,7 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index.html'),
+    path('', views.index, name='index'),
     path('delete/<int:taskId>', views.delete, name='removeTask'),
     path('edit/<int:taskId>', views.edit, name='editTask'),
     path('update/<int:taskId>', views.update, name='updateTask'),
